@@ -28,6 +28,13 @@ npm install excel-tools-mcp -g
 }
 ```
 
+## 构建方式
+```shell
+npm install
+npm run builld
+```
+
 ## 项目文档
 Github：![https://github.com/qiuyurs/excel-tools-mcp](https://github.com/qiuyurs/excel-tools-mcp)
+
 教程：![https://gwl1554ppni.feishu.cn/wiki/Yi5dw2N8midd8ekDOHOcefNrnVc?fromScene=spaceOverview](https://gwl1554ppni.feishu.cn/wiki/Yi5dw2N8midd8ekDOHOcefNrnVc?fromScene=spaceOverview)
