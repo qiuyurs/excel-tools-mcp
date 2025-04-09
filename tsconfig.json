@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        // 指定编译后的ECMAScript目标版本
+        "target": "ES2020",
+        
+        // 指定模块系统类型，NodeNext表示使用Node.js最新的模块系统
+        "module": "NodeNext",
+        
+        // 指定TypeScript源文件的根目录
+        "rootDir": "./src",
+        
+        // 指定编译输出目录
+        "outDir": "./build",
+        
+        // 启用ES模块与CommonJS模块的互操作性
+        "esModuleInterop": true,
+        
+        // 跳过类型检查库声明文件
+        "skipLibCheck": true
+    }
+}

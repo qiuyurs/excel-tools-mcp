@@ -1,0 +1,53 @@
+{
+  "name": "excel-tools-mcp",  
+  "version": "1.0.0",
+  "description": "基于MCP协议的Excel操作工具，支持读取、创建和更新Excel文件",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc --project ./tsconfig.json --esModuleInterop",
+    "start": "node \"./build/index.js\" --experimental-specifier-resolution=node",
+    "prepublish": "npm run build"  
+  },
+  "keywords": [
+    "excel",
+    "mcp",
+    "exceljs",
+    "spreadsheet",
+    "server"
+  ],
+  "author": "润雨 qiuyurs@163.com",  
+  "license": "MIT",  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qiuyurs/excel-tools-mcp.git" 
+  },
+  "bugs": {
+    "url": "https://github.com/qiuyurs/excel-tools-mcp/issues"  
+  },
+  "homepage": "https://github.com/qiuyurs/excel-tools-mcp#readme",  
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@types/node-fetch": "^2.6.12",
+    "exceljs": "^4.4.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.16",
+    "@types/xlsx": "^0.0.36",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  },
+  "type": "module",
+  "bin": {
+    "excel-tools": "./build/index.js" 
+  },
+  "engines": {
+    "node": ">=16.0.0"  
+  },
+  "files": [
+    "README.md",
+    "build",
+    "CHANGELOG.md"
+  ]
+}
