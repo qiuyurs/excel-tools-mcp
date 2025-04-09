@@ -10,7 +10,7 @@
 
 ## 安装方式
 ```bash
-npm install excel-tools-mcp -g
+npm install @qiuyurs/excel-tools-mcp -g
 ```
 
 ## MCP配置示例
@@ -33,6 +33,34 @@ npm install excel-tools-mcp -g
 npm install
 npm run builld
 ```
+
+## 支持工具
+
+### excel.read
+读取Excel文件内容。
+
+#### 输入参数
+- `filePath` (string): Excel文件路径。
+#### 输出参数
+返回数据结构：{content: Array<{type: 'text', text: string}>}, text字段包含 {SheetName: 工作表名称, title: [行号, ...表头], content: [[行号, ...数据行]]}
+
+### excel.create
+创建新的Excel文件。
+
+#### 输入参数
+- `filePath` (string): Excel文件路径。
+- `sheets` (Array<{name: string, title: Array<string>, content: Array<Array<string>>}>): 工作表信息数组。
+#### 输出参数
+返回数据结构：{content: Array<{type: 'text', text: string}>}, text字段包含 {SheetName: 工作表名称, title: [行号,...表头], content: [[行号,...数据行]]}
+
+### excel.update
+更新Excel文件内容。
+
+#### 输入参数
+- `filePath` (string): Excel文件路径。
+- `sheets` (Array<{name: string, title: Array<string>, content: Array<Array<string>>}>): 工作表信息数组。
+#### 输出参数
+返回数据结构：{content: Array<{type: 'text', text: string}>}, text字段包含 {SheetName: 工作表名称, title: [行号,...表头], content: [[行号,...数据行]]}
 
 ## 项目文档
 Github：![https://github.com/qiuyurs/excel-tools-mcp](https://github.com/qiuyurs/excel-tools-mcp)

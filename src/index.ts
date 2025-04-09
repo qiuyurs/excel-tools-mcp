@@ -8,7 +8,7 @@ import fs from 'fs';
 // 创建MCP服务器实例
 const server = new McpServer({
   name: "excel_tools",  // 工具名称
-  version: "1.0.0"      // 工具版本号
+  version: "1.0.5"      // 工具版本号
 });
 
 // 定义读取Excel文件的工具方法
